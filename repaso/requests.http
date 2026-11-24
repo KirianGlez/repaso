@@ -1,0 +1,31 @@
+### Obtener todos los empleados
+GET http://localhost:8080/api/employees
+Accept: application/json
+
+### Obtener empleado por ID
+GET http://localhost:8080/api/employees/2
+
+### Crear empleado
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "department": "IT",
+    "salary": 35000
+}
+
+### Actualizar empleado
+PUT http://localhost:8080/api/employees/2
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "john@example.com",
+    "department": "IT",
+    "salary": "45000"
+}
+
+### Borrar empleado
+DELETE http://localhost:8080/api/employees/1
